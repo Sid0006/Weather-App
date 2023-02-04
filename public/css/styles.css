@@ -1,0 +1,350 @@
+body {
+    background-image: url("/images/World_Map.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+}
+
+div.card-1 {
+
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    background-image: url(/images/Cloudy.svg);
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+div .card-header {
+    background-color: transparent;
+    color: #000;
+    font-size: 40px;
+    padding: auto;
+    border: 0;
+
+    margin: auto;
+    color: #fff;
+    font-weight: 10%;
+
+}
+
+div .card-body {
+    background-color: rgb(13, 13, 84);
+    color: #fff;
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    border-radius: 20px;
+    left: 100px;
+    top: 200px;
+}
+
+.btn {
+    position: absolute;
+    left: 250px;
+    top: 90px;
+}
+
+.inputbox {
+    position: relative;
+    width: 196px;
+    top: -32px;
+}
+
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+    top: 56px;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    letter-spacing: 00.05em;
+    transition: 0.5s;
+    pointer-events: none;
+    top: 51px;
+}
+
+.inputbox input:valid~span,
+.inputbox input:focus~span {
+    color: #fff;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0, 75em;
+}
+
+.inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: -58px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputbox input:valid~i,
+.inputbox input:focus~i {
+    height: 44px;
+}
+
+span {
+    margin: 5px 5px;
+}
+
+.cloud {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+.cloud {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #fff;
+    border-radius: 100px 100px 0 0;
+    animation: cloud 9s linear infinite;
+}
+
+.cloud::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 12.5px;
+    background: inherit;
+    border-radius: 100px 100px 0 0;
+    left: -20px;
+    top: 12.5px;
+    box-shadow: 65px 0 white;
+}
+
+@keyframes cloud {
+    from {
+        left: -150px;
+    }
+
+    to {
+        left: 700px;
+    }
+}
+
+.cloudOne {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #fff;
+    border-radius: 100px 100px 0 0;
+    animation: cloud 12s linear infinite;
+
+}
+
+.cloudOne::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 12.5px;
+    background: inherit;
+    border-radius: 100px 100px 0 0;
+    left: -20px;
+    top: 12.5px;
+    box-shadow: 65px 0 white;
+}
+
+.cloudTwo {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #fff;
+    border-radius: 100px 100px 0 0;
+    animation: cloud 15s linear infinite;
+    top: 91px;
+
+}
+
+.cloudTwo::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 12.5px;
+    background: inherit;
+    border-radius: 100px 100px 0 0;
+    left: -20px;
+    top: 12px;
+    box-shadow: 65px 0 white;
+}
+
+.cloudThree {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background: #fff;
+    border-radius: 100px 100px 0 0;
+    animation: cloud 20s linear infinite;
+    top: 187px;
+
+}
+
+.cloudThree::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 12.5px;
+    background: inherit;
+    border-radius: 100px 100px 0 0;
+    left: -20px;
+    top: 13px;
+    box-shadow: 65px 0 white;
+}
+
+
+
+@media only screen and (max-width: 950px) {
+
+    div.card-1 {
+        width: 338px;
+        height: 364px;
+    }
+
+    .body-1 {
+        background-position: center;
+        background-size: cover;
+        
+    }
+
+    div .card-header {
+        font-size: 30px;
+        width: auto;
+        padding: 0 0 0 0px;
+        z-index: 99;
+        color: rgb(3, 6, 62);
+        position: absolute;
+        font-weight: 480;
+        top: 9px;
+        margin: 0;
+        left: 50px;
+    }
+
+    .cloudTwo {
+        top: 92px;
+    }
+
+    .cloudThree {
+        top: 127px;
+    }
+
+    .cloudThree::before {
+        top: 12px;
+    }
+
+    div .card-body {
+        width: 94%;
+        height: 40%;
+        left: 11px;
+        top: 130px;
+    }
+    p.pass-1{
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        top: 90px;
+        left: 232px;
+    }
+    div .weather{
+        margin: 0;
+    }
+    .desp{
+        padding: 0 0 0 17px;
+        margin: 40px 0 0 0 ;
+        font-size: 13px;
+    }
+    .temp{
+        font-size: 15px;
+    margin: 40px 0 0px 0 ;
+    padding-left: 20px;
+    }
+    img.img-url{
+        position: absolute;
+        left: 257px;
+        width: 53px;
+        top: 22px;
+    }
+    .try-1{
+        top: 88px;
+        left: 211px;
+    }
+}
+
+ @media only screen and (min-width: 1000px){
+   
+
+    div .card-body-2{
+        left: 58px;
+        top: 153px;
+        width: 83%;
+        height: 45%;
+        
+    }
+    .temp{
+        font-size: 25px;
+        position: absolute;
+        top: 141px;
+        left: 17px;
+    }
+    img.img-url{
+        position: absolute;
+        top: 14px;
+        left: 435px;
+    }
+    p.desp{
+        margin: 50px 0 0 0;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    div.card-header{
+        position: absolute;
+        left: 192px;
+        top: 17px;
+        z-index: 99;
+        color: rgb(3, 6, 62);
+    }
+    p.pass-1{
+        margin-bottom: 10px;
+    }
+    .try-1{
+        top: 161px;
+        left: 446px;
+    }
+    .temp-1{
+        font-size: 29px;
+        top: 92px;
+        left: 36px;
+    }
+
+    
+} 
+
+
