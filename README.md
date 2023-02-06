@@ -6,5 +6,8 @@ You need to download node.js.
 You'll need to download npm packages : express, ejs, body-parser.
 
 
+Run this code in your browser: localhost:3000
+
+
 https://user-images.githubusercontent.com/104689449/216784731-3a425472-8fd7-4671-bb9e-7d2c2de3795b.mp4
 
